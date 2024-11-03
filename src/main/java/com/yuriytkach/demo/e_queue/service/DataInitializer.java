@@ -1,7 +1,9 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.service;
 
 import java.time.LocalTime;
 
+import com.yuriytkach.demo.e_queue.entity.BookingSlot;
+import com.yuriytkach.demo.e_queue.repository.BookingSlotRepository;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.data.redis.core.StringRedisTemplate;

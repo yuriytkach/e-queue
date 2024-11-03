@@ -1,4 +1,4 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.controller;
 
 import java.util.Map;
 
