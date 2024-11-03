@@ -1,0 +1,31 @@
+app:
+  cycle-duration: PT5M
+  booking-round-duration: PT15S
+  booking-cron: '50 4-59/5 * * * *'
+  reset-cron: '59 59 * * * *'
+
+spring:
+
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+  application.name: e-queue
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: ${GITHUB_CLIENT_ID}
+            clientSecret: ${GITHUB_CLIENT_SECRET}
+logging:
+  level:
+    com.yuriytkach: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,scheduledtasks
