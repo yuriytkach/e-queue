@@ -1,4 +1,4 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.config;
 
 import java.time.Duration;
 

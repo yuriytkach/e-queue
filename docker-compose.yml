@@ -1,5 +1,16 @@
-version: '3'
+version: '3.8'
+
 services:
+  app:
+    image: docker.io/library/e-queue:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+
   redis:
     container_name: e-queue-redis
     image: redis:7.0-alpine

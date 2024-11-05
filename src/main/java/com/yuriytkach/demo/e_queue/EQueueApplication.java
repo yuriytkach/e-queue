@@ -1,5 +1,6 @@
 package com.yuriytkach.demo.e_queue;
 
+import com.yuriytkach.demo.e_queue.config.AppProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

@@ -1,12 +1,15 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.controller;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.stream.StreamSupport;
 
+import com.yuriytkach.demo.e_queue.config.AppProperties;
+import com.yuriytkach.demo.e_queue.repository.BookingSlotRepository;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;

@@ -1,5 +1,6 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.config;
 
+import com.yuriytkach.demo.e_queue.service.CustomAuthenticationSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;

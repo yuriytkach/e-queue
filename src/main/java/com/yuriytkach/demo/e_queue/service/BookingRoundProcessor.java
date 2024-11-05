@@ -1,4 +1,4 @@
-package com.yuriytkach.demo.e_queue;
+package com.yuriytkach.demo.e_queue.service;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -6,6 +6,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
+import com.yuriytkach.demo.e_queue.entity.BookingSlot;
+import com.yuriytkach.demo.e_queue.repository.BookingSlotRepository;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
